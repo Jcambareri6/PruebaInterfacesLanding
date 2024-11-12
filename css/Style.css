@@ -77,17 +77,20 @@
 
 .seccion4{
   height:1157px;
-}
-.seccion4>div {
-  height: 400px;
+  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%221280%22%20height%3D%221157%22%20viewBox%3D%220%200%201280%201157%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200C499.868%2048.2939%20780.13%2047.017%201280%200V1157H0V0Z%22%20fill%3D%22%235829BF%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
-.seccion4>div>h1 {
+
+.seccion4>h1 {
+  
   position: absolute;
+  top: 2787px;;
   width: 950px;
   height: 153px;
   left: calc(50% - 950px/2);
-  top: 4055px;
+  margin-top: 575px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 600;
@@ -99,17 +102,19 @@
   z-index: 2;
 }
 
-.seccion4>div>img {
+.seccion4>img {
   z-index: 1;
+  margin-top: 390px;
 }
 
-.seccion4>div>button {
+.seccion4>button {
 
   position: absolute;
+  top: 3515px;
   width: 540px;
   height: 66px;
   left: calc(50% - 540px/2);
-  top: 4280px;
+  margin-top: 62px;
   background: #83C252;
   border: 8px solid #FFFFFF;
   /* Drop Shadow */
