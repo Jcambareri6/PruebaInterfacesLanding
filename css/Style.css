@@ -13,9 +13,11 @@
   height: 959px;
 }
 .seccion1 > .headerSeccion1 > .navSeccion1 {
+    z-index: 10;
   display: flex;
   margin-left: 100px;
   margin-right: 100px;
+  
 }
 .navSeccion1>.cont-btnComprar>.btnComprar{
     position: absolute;
@@ -36,9 +38,11 @@
 
 }
 
+
 .navSeccion1 > .MenuHamburguesa > .btnMenu {
  
   margin-top: 20px;
+
 
 }
 
@@ -65,4 +69,50 @@
 .figura3{
     left: 734px;
     top: 339px;
+}
+.seccion1 {
+    position: relative; 
+    z-index: 1; 
+}
+
+
+.presentacion1 > .arbolGrande {
+    position: absolute;
+    top: -400px;
+    z-index: -1; /* Un z-index negativo lo coloca detrás */
+}
+
+/* Coloca el botón de menú por encima */
+.navSeccion1 > .MenuHamburguesa > .btnMenu {
+    margin-top: 20px;
+    position: relative; 
+    z-index: 2; 
+}
+.presentacion1 > .arbolGrande {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+.navSeccion1 > .MenuHamburguesa > .btnMenu {
+    margin-top: 20px;
+    z-index: 5; 
+}
+.arbustoPresentacion{
+    position: absolute;
+    top: 717.97px;
+    left: 161.38px;
+
+}
+.piedraPresentacion{
+    position: absolute;
+    top:793.37px;
+    left:129.07px;
+    z-index: 3;
+}
+.arbustoPresentacion2{
+    position: absolute;
+    top:821.65px;
+    left:197.06px;
+    z-index: 4;
 }
