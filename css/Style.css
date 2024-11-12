@@ -244,8 +244,8 @@
 
 .seccion7 > img {
   position: absolute;
-  top: 11000px;
-  left: 700px;
+  top: 11236px;
+  left: 599px;
 }
 .seccion7 > h1 {
 
@@ -253,6 +253,7 @@
   width: 746px;
   height: 285px;
   left: 102px;
+  margin-top: 236px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 600;
@@ -265,6 +266,7 @@
 .seccion7 > p {
 
   position: relative;
+  margin-top: 43px;
   width: 467px;
   height: 190px;
   left: 100px;
