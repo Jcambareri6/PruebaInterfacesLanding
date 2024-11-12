@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Container {
+  max-width: 1280px;
+}
+.seccion1 {
+  background-image: url("../img/sector1/fondo-sector1.png");
+  width: inherit;
+  height: 959px;
+}
+.seccion1 > .headerSeccion1 > .navSeccion1 {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.navSeccion1>.cont-btnComprar>.btnComprar{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 980px;
+    top: 20px;
+    background: #83C252;
+    border: 8px solid #FFFFFF;
+    box-shadow: 4px 5px 0px #02187E;
+    border-radius: 111px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 18.9px;
+   
+
+}
+
+.navSeccion1 > .MenuHamburguesa > .btnMenu {
+ 
+  margin-top: 20px;
+
+}
+
+.imagenLogo {
+  margin-left: 360px;
+  top: 55px;
+}
+.seccion1>.ContenedorFiguras{
+    display: flex;
+}
+.figura1,.figura2,.figura3{
+    position: absolute;
+}
+.figura1{
+    left: 450px;
+    top: 501px;
+    z-index: 2;
+}
+.figura2{
+    left: 576px;
+    top: 404px;
+    z-index: 1;
+}
+.figura3{
+    left: 734px;
+    top: 339px;
+}
