@@ -234,16 +234,20 @@
 
 }
 
-.seccion6{
-  height: 1443.83px;
+.seccion6 {
+  height: 1443.83px
 }
 
-.seccion6 > img {
+.seccion7{
+  height: 973px;
+}
+
+.seccion7 > img {
   position: absolute;
-  top: 9700px;
+  top: 11000px;
   left: 700px;
 }
-.seccion6 > h1 {
+.seccion7 > h1 {
 
   position: relative;
   width: 746px;
@@ -258,7 +262,7 @@
 
 }
 
-.seccion6 > p {
+.seccion7 > p {
 
   position: relative;
   width: 467px;
@@ -273,11 +277,11 @@
 
 }
 
-.seccion7 {
-  height: 973px;
+.seccion8 {
+  height: 729px;
 }
 
 
-.seccion8{
+.seccion9{
   height:729px
 }
