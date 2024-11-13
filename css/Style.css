@@ -136,7 +136,57 @@ align-items: center;
     left:97.06px;
     z-index: 4;
 }
+.arbustoPresentacion2{
+  position: absolute;
+  top:821.65px;
+  left:97.06px;
+  z-index: 4;
+}
 
+
+.arbol2{
+position: absolute;
+left:781.03px ;
+top:106.71px ;
+z-index: 3;
+}
+.piedraIzq,.piedraMedio,.piedraDerecha,.arbolFondo,.arbusto1Fondo,.arbusto2Fondo{
+position: absolute;
+}
+.piedraIzq{
+top: 737.5px;
+left: 936px; 
+z-index: 4;
+}
+.piedraMedio{
+top: 786.64px;
+left: 943px;
+z-index: 5;
+}
+.piedraDerecha{
+top: 737.5px;
+left: 973px;
+z-index: 4;
+}
+.arbolFondo{
+left: 980.97px;
+top: 278.38px;
+z-index:1 ;
+}
+.arbolFondo>.arbolImg{
+clip-path: inset(0 80px 0 0);
+}
+.arbusto1Fondo{
+top: 630.46px;
+left: 928.46px;
+z-index: 0;
+}
+.arbusto2Fondo{
+top:662.1px ;
+left: 980px;
+z-index: 2;
+clip-path: inset(0 47px 0 0); ;
+}
 .seccion2 {
   height: 894px;
 }
