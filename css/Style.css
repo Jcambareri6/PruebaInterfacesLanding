@@ -520,7 +520,7 @@ body {
   width: 265px;
   height: 124px;
   margin-left: 794px;
-  top: 13532px;
+  top: 13316px;
   background: url('../img/sector9/nube1.png');
 }
 
@@ -529,8 +529,8 @@ body {
   width: 387px;
   height: 181px;
   margin-left: 962px;
-  top: 13175px;
-  background: url('../img\sector9/nube2.png');
+  top: 13359px;
+  background: url('../img/sector9/nube2.png');
 
 }
 
@@ -538,8 +538,8 @@ body {
   position: absolute;
   width: 387px;
   height: 181px;
-  left: -56px;
-  top: 13434px;
+  margin-left: -56px;
+  top: 13618px;
   background: url('../img/sector9/nube3.png');
 
 }
