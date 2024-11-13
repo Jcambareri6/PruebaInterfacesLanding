@@ -342,8 +342,44 @@ body {
 }
 
 .seccion6 {
-  height: 1443.83px
+  height: 1443.83px;
+  width: 100%;
+  max-width: 1280px;
+  background-color: #EFB71E;
+  clip-path: path('M-83 56.0049C135 -108.5 905.5 152.502 1346 56.0049V1444C776.18 1413.21 444.167 1363.12 -83 1444V56.0049Z');
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
+
+.seccion6>img {
+  position: absolute;
+  width: 587px;
+  height: 989px;
+  right: -17px;
+  margin-top: -687px;
+  overflow: visible;
+}
+
+.seccion6>h1 {
+  width: 802px;
+  margin-top: 300px;
+  margin-left: 100px;
+  font-weight: 600;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.seccion6 iframe {
+  width: 804px;
+  height: 452px;
+  display: block;
+  margin-left: 100px;
+  margin-top: 36px;
+  border-radius: 45px;
+  border: 29px solid white;
+}
+
 
 .seccion7 {
   height: 973px;
@@ -553,35 +589,32 @@ footer {
 
 footer .img_paginas_game {
   background-color: #242424;
-
 }
 
 footer .img_paginas_game img {
   width: 1080px;
   margin-left: 100px;
   margin-right: 100px;
-
 }
 
-footer p,
-footer .cookie {
+footer p {
   width: 820px;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
-  line-height: 94.5%;
-  letter-spacing: 11%;
-  margin: 35px 355px 24px 100px
+  line-height: 0.945;
+  letter-spacing: 0.11em;
+  margin: 35px 355px 24px 100px;
 }
 
-.cookie {
+footer .cookie {
   color: #ffffff;
   margin-left: 100px;
   margin-top: 10px;
-
+  margin-bottom: 24px;
 }
 
-.cookie a {
+footer .cookie a {
   color: #ffffff;
   text-decoration: underline;
   font-weight: bold;
