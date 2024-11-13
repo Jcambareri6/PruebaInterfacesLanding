@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .containerPrincipal {
   width: 1280px;
 
@@ -26,34 +27,43 @@ body {
   padding-left: 100px;
   padding-right: 100px;
 }
+
 .seccion1 {
+
   width: inherit;
   height: 959px;
 }
-.seccion1 > .headerSeccion1 > .navSeccion1 {
+
+.seccion1>.headerSeccion1>.navSeccion1 {
   z-index: 10;
   display: flex;
   /* margin-left: 100px;
   margin-right: 100px; */
+
 }
-.navSeccion1 > .cont-btnComprar > .btnComprar {
+
+.navSeccion1>.cont-btnComprar>.btnComprar {
   position: absolute;
   width: 200px;
   height: 50px;
   left: 980px;
   top: 20px;
-  background: #83c252;
-  border: 8px solid #ffffff;
-  box-shadow: 4px 5px 0px #02187e;
+  background: #83C252;
+  border: 8px solid #FFFFFF;
+  box-shadow: 4px 5px 0px #02187E;
   border-radius: 111px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Lato;
   font-size: 20px;
   font-weight: 900;
   line-height: 18.9px;
+
+
 }
 
-.navSeccion1 > .MenuHamburguesa > .btnMenu {
+
+.navSeccion1>.MenuHamburguesa>.btnMenu {
+
   margin-top: 20px;
 }
 
@@ -118,6 +128,7 @@ body {
   background: rgba(68, 104, 63, 0.61);
   filter: blur(13.5px);
 }
+
 .seccion1 {
   position: relative;
   z-index: 1;
@@ -212,6 +223,7 @@ body {
   z-index: 2;
   clip-path: inset(0 47px 0 0);
 }
+
 .seccion2 {
   height: 894px;
   clip-path: path(
@@ -357,8 +369,8 @@ body {
   width: 467px;
   height: 148px;
   left: 713px;
-  margin-top: 284px;
-  font-family: "Lato";
+  margin-top: 266px;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -379,14 +391,15 @@ body {
 .seccion5 > .textos > .tx-1 {
   position: relative;
   margin-top: 159px;
+  margin-bottom: 284px;
 }
 
 .seccion5 > .img-sec4 {
   position: absolute;
   width: 291px;
   height: 436px;
-  left: 243px;
-  top: 4632px;
+  margin-left: 243px;
+  top: 4642px;
 }
 
 .seccion5 > h1 {
@@ -409,18 +422,20 @@ body {
   height: 973px;
 }
 
-.seccion7 > img {
+.seccion7>img {
   position: absolute;
-  top: 11236px;
-  left: 599px;
+  top: 11062px;
+  margin-left: 599px;
 }
-.seccion7 > h1 {
+
+.seccion7>h1 {
+
   position: relative;
   width: 746px;
   height: 285px;
-  left: 102px;
-  margin-top: 236px;
-  font-family: "Lato";
+  left: 100px;
+  margin-top: 220px;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
@@ -428,7 +443,8 @@ body {
   color: #9d2121;
 }
 
-.seccion7 > p {
+.seccion7>p {
+
   position: relative;
   margin-top: 43px;
   width: 467px;
@@ -447,9 +463,11 @@ body {
   height: 729px;
 }
 
+
+
 .seccion9 {
   margin-top: 190px;
-  height: 729px;
+  height: 1296px
 }
 
 .seccion9 > h1 {
@@ -465,26 +483,28 @@ body {
   color: #000000;
 }
 
-.seccion9 > .email-sub {
+.seccion9>.email-sub {
   margin-top: 36px;
   width: 718px;
   height: 100px;
   margin-left: 100px;
 }
 
-.seccion9 > .email-sub > .correo {
+.seccion9>.email-sub>.correo {
+
   box-sizing: border-box;
   width: 562px;
   height: 100px;
   background: #ececec;
   border-width: 9px 0px 9px 9px;
   border-style: solid;
-  border-color: #ffffff;
+  border-color: #FFFFFF;
   border-radius: 50px 0px 0px 50px;
   box-shadow: 4px 5px 0px #02187e;
 }
 
-.seccion9 > .email-sub > .correo > p {
+.seccion9>.email-sub>.correo>p {
+
   width: 437px;
   height: 19px;
   margin-top: 32px;
@@ -498,7 +518,8 @@ body {
   color: rgba(0, 0, 0, 0.39);
 }
 
-.seccion9 > .email-sub > .suscribirse > button {
+.seccion9>.email-sub>.suscribirse>button {
+
   position: relative;
   left: 562px;
   top: -100px;
@@ -511,7 +532,9 @@ body {
   transform: matrix(-1, 0, 0, 1, 0, 0);
   box-shadow: 0px 5px 0px #02187e;
 }
-.seccion9 > .email-sub > .suscribirse > button > h1 {
+
+.seccion9>.email-sub>.suscribirse>button>h1 {
+
   margin-left: 30px;
   width: 146px;
   height: 19px;
@@ -526,7 +549,7 @@ body {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.seccion9 > p {
+.seccion9>p {
   margin-top: 46px;
   margin-left: 100px;
   width: 578px;
@@ -539,7 +562,97 @@ body {
   color: #000000;
 }
 
-.seccion9 > #img_copyright {
+.seccion9>#img_copyright {
   margin-left: 100px;
   margin-top: 11px;
+}
+
+.seccion9>#imagen_fondo {
+  position: absolute;
+  width: 1280px;
+  height: 1296px;
+  margin-left: 0px;
+  top: 13092px;
+  z-index: -1;
+  background: linear-gradient(180deg, #E0D299 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.seccion9>#nube1 {
+  position: absolute;
+  width: 265px;
+  height: 124px;
+  margin-left: 794px;
+  top: 13316px;
+  background: url('../img/sector9/nube1.png');
+}
+
+.seccion9>#nube2 {
+  position: absolute;
+  width: 387px;
+  height: 181px;
+  margin-left: 962px;
+  top: 13359px;
+  background: url('../img/sector9/nube2.png');
+
+}
+
+.seccion9>#nube3 {
+  position: absolute;
+  width: 387px;
+  height: 181px;
+  margin-left: -56px;
+  top: 13618px;
+  background: url('../img/sector9/nube3.png');
+
+}
+
+/*footer*/
+footer {
+  width: 1280px;
+  background-color: #5E5E5D;
+  overflow: hidden;
+}
+
+footer .img_paginas_game {
+  background-color: #242424;
+
+}
+
+footer .img_paginas_game img {
+  width: 1080px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+footer p,
+footer .cookie {
+  width: 820px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 94.5%;
+  letter-spacing: 11%;
+  margin: 35px 355px 24px 100px
+}
+
+.cookie {
+  color: #ffffff;
+  margin-left: 100px;
+  margin-top: 10px;
+
+}
+
+.cookie a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.img_redes img {
+  margin-bottom: 24px;
+  margin-left: 100px;
+  opacity: 1;
+  width: 212px;
 }
