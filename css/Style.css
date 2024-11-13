@@ -11,17 +11,17 @@ body {
 }
 
 .containerPrincipal {
-  width: 1280px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   background-image: url("../img/sector1/fondo-sector1.png");
-  background-repeat: no-repeat;
+  background-repeat: round;
 }
 .contenido {
-  width: 1280px;
+  width: inherit;
 }
 .contenido-1080 {
   padding-left: 100px;
@@ -291,7 +291,7 @@ body {
 
   position: absolute;
   top: 1491px;
-  left: 130px;
+  margin-left: 44px;
   z-index: 1;
  
 }
@@ -299,7 +299,7 @@ body {
   position: absolute;
   
   top: 867px;
-  left: 903px;
+  margin-left: 803px;
   gap: 0px;
   opacity: 0px;
   z-index: 1;
@@ -338,6 +338,7 @@ body {
 .seccion4 > img {
   z-index: 1;
   margin-top: 390px;
+  margin-left: 35px;
 }
 
 .seccion4 > button {
@@ -461,13 +462,14 @@ body {
 .seccion8 {
   margin-top: 54px;
   height: 729px;
+  margin-left: 100px;
 }
 
 
 
 .seccion9 {
   margin-top: 190px;
-  height: 1296px
+  height: 1296px;
 }
 
 .seccion9 > h1 {
@@ -599,6 +601,7 @@ body {
   height: 181px;
   margin-left: 631px;
   top: 13359px;
+  clip-path: inset(0 69px 0 0);
 
 }
 
@@ -608,6 +611,7 @@ body {
   height: 181px;
   margin-left: -387px;
   top: 13618px;
+  clip-path: inset(0 0 0 56px);
 }
 
 .seccion9 > #imagen1 {
