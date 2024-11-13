@@ -287,8 +287,8 @@ clip-path: inset(0 47px 0 0); ;
   position: absolute;
   width: 291px;
   height: 436px;
-  left: 243px;
-  top: 4632px;
+  margin-left: 243px;
+  top: 4642px;
 }
 
 .seccion5>h1 {
@@ -314,16 +314,16 @@ clip-path: inset(0 47px 0 0); ;
 
 .seccion7 > img {
   position: absolute;
-  top: 11236px;
-  left: 599px;
+  top: 11062px;
+  margin-left: 599px;
 }
 .seccion7 > h1 {
 
   position: relative;
   width: 746px;
   height: 285px;
-  left: 102px;
-  margin-top: 236px;
+  left: 100px;
+  margin-top: 220px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 600;
@@ -463,4 +463,35 @@ clip-path: inset(0 47px 0 0); ;
   .seccion9 > #img_copyright {
   margin-left: 100px;
   margin-top: 11px;
+  }
+
+  .seccion9 > #imagen_fondo {
+  position: absolute;
+  width: 1280px;
+  height: 1296px;
+  margin-left: 0px;
+  top: 13092px;
+  z-index: -1;
+  background: linear-gradient(180deg, #E0D299 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  .seccion9 > #nube1 {
+  position: absolute;
+  width: 265px;
+  height: 124px;
+  margin-left: 794px;
+  top: 13532px;
+  z-index: 1;
+  background: url(image);
+  }
+
+  .seccion9 > #nube2 {
+  position: absolute;
+  width: 387px;
+  height: 181px;
+  margin-left: 962px;
+  top: 13175px;
+  background: url(image.png);
+
   }
