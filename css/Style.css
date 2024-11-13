@@ -3,27 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
-.Container {
-  max-width: 1280px;
+}
+.containerPrincipal {
+  width: 1280px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-image: url("../img/sector1/fondo-sector1.png");
+  background-repeat: no-repeat;
+ 
+}
+.contenido{
+  width: 1080px;
 }
 .seccion1 {
-  background-image: url("../img/sector1/fondo-sector1.png");
   width: inherit;
   height: 959px;
 }
 .seccion1 > .headerSeccion1 > .navSeccion1 {
     z-index: 10;
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
   
 }
 .navSeccion1>.cont-btnComprar>.btnComprar{
     position: absolute;
     width: 200px;
     height: 50px;
-    left: 980px;
+    left: 880px;
     top: 20px;
     background: #83C252;
     border: 8px solid #FFFFFF;
@@ -47,8 +64,9 @@
 }
 
 .imagenLogo {
-  margin-left: 360px;
+  margin-left: 260px;
   top: 55px;
+  
 }
 .seccion1>.ContenedorFiguras{
     display: flex;
@@ -57,17 +75,17 @@
     position: absolute;
 }
 .figura1{
-    left: 450px;
+    left: 311px;
     top: 501px;
     z-index: 2;
 }
 .figura2{
-    left: 576px;
+    left: 436px;
     top: 404px;
     z-index: 1;
 }
 .figura3{
-    left: 734px;
+    left: 602px;
     top: 339px;
 }
 .seccion1 {
@@ -79,7 +97,8 @@
 .presentacion1 > .arbolGrande {
     position: absolute;
     top: -400px;
-    z-index: -1; /* Un z-index negativo lo coloca detrás */
+    z-index: -1;
+    left: -100px; /* Un z-index negativo lo coloca detrás */
 }
 
 /* Coloca el botón de menú por encima */
@@ -101,19 +120,20 @@
 .arbustoPresentacion{
     position: absolute;
     top: 717.97px;
-    left: 161.38px;
+    left: 61px;
+
 
 }
 .piedraPresentacion{
     position: absolute;
     top:793.37px;
-    left:129.07px;
+     left: 28.5px;
     z-index: 3;
 }
 .arbustoPresentacion2{
     position: absolute;
     top:821.65px;
-    left:197.06px;
+    left:97.06px;
     z-index: 4;
 }
 
