@@ -250,7 +250,7 @@ clip-path: inset(0 47px 0 0); ;
 }
 
 .seccion5{
-  height: 5274px;
+  height: 5255px;
 }
 
 .seccion5>.textos>div {
@@ -258,7 +258,7 @@ clip-path: inset(0 47px 0 0); ;
   width: 467px;
   height: 148px;
   left: 713px;
-  margin-top: 284px;
+  margin-top: 266px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -281,6 +281,7 @@ clip-path: inset(0 47px 0 0); ;
 .seccion5>.textos>.tx-1 {
   position: relative;
   margin-top: 159px;
+  margin-bottom: 284px;
 }
 
 .seccion5>.img-sec4 {
@@ -482,8 +483,7 @@ clip-path: inset(0 47px 0 0); ;
   height: 124px;
   margin-left: 794px;
   top: 13532px;
-  z-index: 1;
-  background: url(image);
+  background: url('../img\sector7\image245.png');
   }
 
   .seccion9 > #nube2 {
@@ -492,6 +492,15 @@ clip-path: inset(0 47px 0 0); ;
   height: 181px;
   margin-left: 962px;
   top: 13175px;
-  background: url(image.png);
+  background: url('../img\sector7\image 244.png');
+
+  }
+  .seccion9 > #nube3 {
+  position: absolute;
+  width: 387px;
+  height: 181px;
+  left: -56px;
+  top: 13434px;
+  background: url('../img\sector7\image 243.png');
 
   }
