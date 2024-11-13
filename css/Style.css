@@ -506,31 +506,36 @@ body {
 
 .seccion9>#imagen_fondo {
   position: absolute;
-  width: 1280px;
-  height: 1296px;
-  margin-left: 0px;
-  top: 13092px;
+  margin-left: -331px;
+  top: 12989px;
   z-index: -1;
-  background: linear-gradient(180deg, #E0D299 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
-  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.seccion9 > #colina {
+  position: absolute;
+  width: 1280px;
+  height: 389px;
+  margin-left: -331px;
+  top: 13896px;
+  z-index: 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+
 }
 
 .seccion9>#nube1 {
   position: absolute;
   width: 265px;
   height: 124px;
-  margin-left: 794px;
+  margin-left: 463px;
   top: 13316px;
-  background: url('../img/sector9/nube1.png');
 }
 
 .seccion9>#nube2 {
   position: absolute;
   width: 387px;
   height: 181px;
-  margin-left: 962px;
+  margin-left: 631px;
   top: 13359px;
-  background: url('../img/sector9/nube2.png');
 
 }
 
@@ -538,10 +543,26 @@ body {
   position: absolute;
   width: 387px;
   height: 181px;
-  margin-left: -56px;
+  margin-left: -387px;
   top: 13618px;
-  background: url('../img/sector9/nube3.png');
+}
 
+.seccion9 > #imagen1 {
+  position: absolute;
+  margin-left: 425px;
+  top: 13328px;
+}
+
+.seccion9 > #imagen2 {
+  position: absolute;
+  margin-left: -266px;
+  top: 13763px;
+}
+
+.seccion9 > #imagen3 {
+  position: absolute;
+  margin-left: 76px;
+  top: 13734px;
 }
 
 /*footer*/
