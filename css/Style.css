@@ -208,7 +208,7 @@ align-items: center;
   width: 467px;
   height: 148px;
   left: 713px;
-  margin-top: 267px;
+  margin-top: 284px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -230,7 +230,7 @@ align-items: center;
 
 .seccion5>.textos>.tx-1 {
   position: relative;
-  top: -111px;
+  margin-top: 159px;
 }
 
 .seccion5>.img-sec4 {
@@ -238,7 +238,7 @@ align-items: center;
   width: 291px;
   height: 436px;
   left: 243px;
-  top: 5400px;
+  top: 4632px;
 }
 
 .seccion5>h1 {
@@ -254,14 +254,163 @@ align-items: center;
 
 }
 
-.seccion6{
-  height: 1443.83px;
+.seccion6 {
+  height: 1443.83px
 }
 
-.seccion7 {
+.seccion7{
   height: 973px;
 }
 
-.seccion8{
+.seccion7 > img {
+  position: absolute;
+  top: 11236px;
+  left: 599px;
+}
+.seccion7 > h1 {
+
+  position: relative;
+  width: 746px;
+  height: 285px;
+  left: 102px;
+  margin-top: 236px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 94.5%;
+  color: #9D2121;
+
+}
+
+.seccion7 > p {
+
+  position: relative;
+  margin-top: 43px;
+  width: 467px;
+  height: 190px;
+  left: 100px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 94.5%;
+  color: #000000;
+
+}
+
+.seccion8 {
+  margin-top: 54px;
+  height: 729px;
+}
+
+
+
+.seccion9{
+  margin-top: 190px;
   height:729px
 }
+
+.seccion9>h1 {
+
+  position: relative;
+  width: 816px;
+  height: 171px;
+  left: calc(50% - 816px/2 - 132px);
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 94.5%;
+  color: #000000;
+
+}
+
+.seccion9 > .email-sub{
+  margin-top: 36px;
+  width: 718px;
+  height: 100px;
+  margin-left: 100px;
+
+}
+
+.seccion9 > .email-sub > .correo {
+
+  box-sizing: border-box;
+  width: 562px;
+  height: 100px;
+  background: #ECECEC;
+  border-width: 9px 0px 9px 9px;
+  border-style: solid;
+  border-color: #FFFFFF;  
+  border-radius: 50px 0px 0px 50px;
+  box-shadow: 4px 5px 0px #02187E;
+
+}
+
+.seccion9 > .email-sub > .correo > p {
+
+  width: 437px;
+  height: 19px;
+  margin-top: 32px;
+  margin-left: 43px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 94.5%;
+  letter-spacing: 0.11em;
+  color: rgba(0, 0, 0, 0.39);
+
+}
+
+.seccion9 > .email-sub > .suscribirse> button {
+
+  position: relative;
+  left: 562px;
+  top: -100px;
+  box-sizing: border-box;
+  width: 218px;
+  height: 100px;
+  background: #83C252;
+  border: 9px solid #FFFFFF;
+  border-radius: 50px 0px 0px 50px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  box-shadow: 0px 5px 0px #02187E;
+
+}
+.seccion9 > .email-sub > .suscribirse > button > h1 {
+
+  margin-left: 30px;
+  width: 146px;
+  height: 19px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 94.5%;
+  letter-spacing: 0.11em;
+  color: #FFFFFF;
+  border: 0px solid #FFFFFF;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+
+.seccion9 > p {
+  margin-top: 46px;
+  margin-left: 100px;
+  width: 578px;
+  height: 95px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 94.5%;
+  color: #000000;
+
+}
+
+  .seccion9 > #img_copyright {
+  margin-left: 100px;
+  margin-top: 11px;
+  }
