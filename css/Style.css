@@ -3,13 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .containerPrincipal {
@@ -21,14 +19,10 @@ body {
 
   background-image: url("../img/sector1/fondo-sector1.png");
   background-repeat: no-repeat;
-
 }
-
 .contenido {
-
   width: 1280px;
 }
-
 .contenido-1080 {
   padding-left: 100px;
   padding-right: 100px;
@@ -71,41 +65,68 @@ body {
 .navSeccion1>.MenuHamburguesa>.btnMenu {
 
   margin-top: 20px;
-
-
 }
 
 .imagenLogo {
   margin-left: 260px;
   top: 55px;
-
 }
-
-.seccion1>.ContenedorFiguras {
+.seccion1 > .ContenedorFiguras {
   display: flex;
 }
-
 .figura1,
 .figura2,
 .figura3 {
   position: absolute;
 }
-
 .figura1 {
-  left: 311px;
-  top: 501px;
+  top: 527.28px;
+  left: 411px;
   z-index: 2;
+}
+.sombraFigura1 {
+  position: absolute;
+  width: 140px;
+  height: 33px;
+  left: 494px;
+  top: 762px;
+  background: rgba(68, 104, 63, 0.61);
+  filter: blur(13.5px);
 }
 
 .figura2 {
-  left: 436px;
-  top: 404px;
+  width: 197px;
+  height: 270px;
+  top: 426.04px;
+  left: 536px;
+
   z-index: 1;
 }
+.sombraFigura2 {
+  position: absolute;
+  width: 140px;
+  height: 33px;
+  left: 608px;
+  top: 727px;
 
+  background: rgba(68, 104, 63, 0.61);
+  filter: blur(13.5px);
+}
 .figura3 {
-  left: 602px;
-  top: 339px;
+  width: 174px;
+  height: 384px;
+  top: 338px;
+  left: 700.25px;
+}
+.sombraFigura3 {
+  position: absolute;
+  width: 140px;
+  height: 33px;
+  left: 724px;
+  top: 697px;
+
+  background: rgba(68, 104, 63, 0.61);
+  filter: blur(13.5px);
 }
 
 .seccion1 {
@@ -113,48 +134,40 @@ body {
   z-index: 1;
 }
 
-
-.presentacion1>.arbolGrande {
+.presentacion1 > .arbolGrande {
   position: absolute;
   top: -400px;
   z-index: -1;
-  left: 0px;
-  /* Un z-index negativo lo coloca detrás */
+  left: 0px; /* Un z-index negativo lo coloca detrás */
 }
 
 /* Coloca el botón de menú por encima */
-.navSeccion1>.MenuHamburguesa>.btnMenu {
+.navSeccion1 > .MenuHamburguesa > .btnMenu {
   margin-top: 20px;
   position: relative;
   z-index: 2;
 }
-
-.presentacion1>.arbolGrande {
+.presentacion1 > .arbolGrande {
   position: absolute;
   top: 20px;
   z-index: 1;
 }
 
-.navSeccion1>.MenuHamburguesa>.btnMenu {
+.navSeccion1 > .MenuHamburguesa > .btnMenu {
   margin-top: 20px;
   z-index: 5;
 }
-
 .arbustoPresentacion {
   position: absolute;
   top: 717.97px;
   left: 161.38px;
-
-
 }
-
 .piedraPresentacion {
   position: absolute;
   top: 793.37px;
   left: 129.07px;
   z-index: 3;
 }
-
 .arbustoPresentacion2 {
   position: absolute;
   top: 821.65px;
@@ -162,15 +175,12 @@ body {
   z-index: 4;
 }
 
-
-
 .arbol2 {
   position: absolute;
-  left: 781.03px;
+  left: 881.03px;
   top: 106.71px;
   z-index: 3;
 }
-
 .piedraIzq,
 .piedraMedio,
 .piedraDerecha,
@@ -179,51 +189,121 @@ body {
 .arbusto2Fondo {
   position: absolute;
 }
-
 .piedraIzq {
   top: 737.5px;
-  left: 936px;
+  left: 1040.84px;
   z-index: 4;
 }
-
 .piedraMedio {
   top: 786.64px;
-  left: 943px;
+  left: 1090.84px;
   z-index: 5;
 }
-
 .piedraDerecha {
   top: 737.5px;
-  left: 973px;
+  left: 1072.22px;
   z-index: 4;
 }
-
 .arbolFondo {
-  left: 980.97px;
+  left: 1080.97px;
   top: 278.38px;
   z-index: 1;
 }
-
-.arbolFondo>.arbolImg {
+.arbolFondo > .arbolImg {
   clip-path: inset(0 80px 0 0);
 }
-
 .arbusto1Fondo {
   top: 630.46px;
-  left: 928.46px;
+  left: 1028.46px;
   z-index: 0;
 }
-
 .arbusto2Fondo {
   top: 662.1px;
-  left: 980px;
+  left: 1080.97px;
   z-index: 2;
   clip-path: inset(0 47px 0 0);
-  ;
 }
 
 .seccion2 {
   height: 894px;
+  clip-path: path(
+    "M0 742.37C183.201 870.171 655 790.5 655 790.5C655 790.5 1037.37 755.612 1280 894V0H0V742.37Z"
+  );
+  background-image: linear-gradient(180deg, #88de7f 0%, #a8ebec 46%);
+  z-index: 1;
+  
+}
+
+.tituloJuego {
+  position: absolute;
+  width: 508px;
+  height: 132px;
+  left: 100px;
+  top: 1014px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 47px;
+  line-height: 94.5%;
+  margin-left: 100px;
+  color: #1b428f;
+}
+.parrafoJuego {
+  position: absolute;
+  width: 704px;
+  height: 154px;
+  left: 100px;
+  top: 1168px;
+  margin-left: 100px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #1b428f;
+}
+.partesJuego {
+  width: 576.38px;
+  height: 324.35px;
+  top: 1290px;
+  left: 236px;
+  gap: 0px;
+
+  border: 29px 0px 0px 0px;
+  opacity: 0px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 576.38px;
+  height: 324.35px;
+  left: 236px;
+  top: 1290px;
+  border: 29px solid #1b5f99;
+  border-radius: 77px;
+  background: url(../img/sector2/FondoDiv.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.figura4 {
+
+  position: absolute;
+  top: 1491px;
+  left: 130px;
+  z-index: 1;
+ 
+}
+.figura5{
+  position: absolute;
+  
+  top: 867px;
+  left: 903px;
+  gap: 0px;
+  opacity: 0px;
+  z-index: 1;
+
 }
 
 .seccion3 {
@@ -232,64 +312,59 @@ body {
 
 .seccion4 {
   height: 1157px;
-  background-image: url('data:image/svg+xml,%3Csvg%20width%3D%221280%22%20height%3D%221157%22%20viewBox%3D%220%200%201280%201157%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200C499.868%2048.2939%20780.13%2047.017%201280%200V1157H0V0Z%22%20fill%3D%22%235829BF%22/%3E%3C/svg%3E');
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221280%22%20height%3D%221157%22%20viewBox%3D%220%200%201280%201157%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200C499.868%2048.2939%20780.13%2047.017%201280%200V1157H0V0Z%22%20fill%3D%22%235829BF%22/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-
-.seccion4>h1 {
-
+.seccion4 > h1 {
   position: absolute;
   top: 2787px;
-  ;
   width: 950px;
   height: 153px;
-  left: calc(50% - 950px/2);
+  left: calc(50% - 950px / 2);
   margin-top: 575px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 61.14px;
   line-height: 110%;
   /* or 67px */
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 2;
 }
 
-.seccion4>img {
+.seccion4 > img {
   z-index: 1;
   margin-top: 390px;
 }
 
-.seccion4>button {
-
+.seccion4 > button {
   position: absolute;
   top: 3515px;
   width: 540px;
   height: 66px;
-  left: calc(50% - 540px/2);
+  left: calc(50% - 540px / 2);
   margin-top: 62px;
-  background: #83C252;
-  border: 8px solid #FFFFFF;
+  background: #83c252;
+  border: 8px solid #ffffff;
   /* Drop Shadow */
-  box-shadow: 4px 5px 0px #02187E;
+  box-shadow: 4px 5px 0px #02187e;
   border-radius: 111px;
   text-align: center;
-  color: #FFFFFF;
-  font-family: 'Lato';
+  color: #ffffff;
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 31.14px;
-
 }
 
 .seccion5 {
-  height: 5255px;
+  height: 5274px;
 }
 
-.seccion5>.textos>div {
+.seccion5 > .textos > div {
   position: relative;
   width: 467px;
   height: 148px;
@@ -303,24 +378,23 @@ body {
   color: #000000;
 }
 
-.seccion5>.textos>div>h1 {
-  font-family: 'Lato';
+.seccion5 > .textos > div > h1 {
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 94.5%;
   color: #000000;
   margin-bottom: 15px;
-
 }
 
-.seccion5>.textos>.tx-1 {
+.seccion5 > .textos > .tx-1 {
   position: relative;
   margin-top: 159px;
   margin-bottom: 284px;
 }
 
-.seccion5>.img-sec4 {
+.seccion5 > .img-sec4 {
   position: absolute;
   width: 291px;
   height: 436px;
@@ -328,21 +402,20 @@ body {
   top: 4642px;
 }
 
-.seccion5>h1 {
+.seccion5 > h1 {
   position: relative;
   margin-top: 174px;
   margin-left: 100px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 94.5%;
   color: #000000;
-
 }
 
 .seccion6 {
-  height: 1443.83px
+  height: 1443.83px;
 }
 
 .seccion7 {
@@ -367,8 +440,7 @@ body {
   font-weight: 600;
   font-size: 60px;
   line-height: 94.5%;
-  color: #9D2121;
-
+  color: #9d2121;
 }
 
 .seccion7>p {
@@ -378,13 +450,12 @@ body {
   width: 467px;
   height: 190px;
   left: 100px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 94.5%;
   color: #000000;
-
 }
 
 .seccion8 {
@@ -399,19 +470,17 @@ body {
   height: 1296px
 }
 
-.seccion9>h1 {
-
+.seccion9 > h1 {
   position: relative;
   width: 816px;
   height: 171px;
-  left: calc(50% - 816px/2 - 132px);
-  font-family: 'Lato';
+  left: calc(50% - 816px / 2 - 132px);
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 94.5%;
   color: #000000;
-
 }
 
 .seccion9>.email-sub {
@@ -419,7 +488,6 @@ body {
   width: 718px;
   height: 100px;
   margin-left: 100px;
-
 }
 
 .seccion9>.email-sub>.correo {
@@ -427,13 +495,12 @@ body {
   box-sizing: border-box;
   width: 562px;
   height: 100px;
-  background: #ECECEC;
+  background: #ececec;
   border-width: 9px 0px 9px 9px;
   border-style: solid;
   border-color: #FFFFFF;
   border-radius: 50px 0px 0px 50px;
-  box-shadow: 4px 5px 0px #02187E;
-
+  box-shadow: 4px 5px 0px #02187e;
 }
 
 .seccion9>.email-sub>.correo>p {
@@ -442,14 +509,13 @@ body {
   height: 19px;
   margin-top: 32px;
   margin-left: 43px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 94.5%;
   letter-spacing: 0.11em;
   color: rgba(0, 0, 0, 0.39);
-
 }
 
 .seccion9>.email-sub>.suscribirse>button {
@@ -460,12 +526,11 @@ body {
   box-sizing: border-box;
   width: 218px;
   height: 100px;
-  background: #83C252;
-  border: 9px solid #FFFFFF;
+  background: #83c252;
+  border: 9px solid #ffffff;
   border-radius: 50px 0px 0px 50px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
-  box-shadow: 0px 5px 0px #02187E;
-
+  box-shadow: 0px 5px 0px #02187e;
 }
 
 .seccion9>.email-sub>.suscribirse>button>h1 {
@@ -473,16 +538,15 @@ body {
   margin-left: 30px;
   width: 146px;
   height: 19px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
   line-height: 94.5%;
   letter-spacing: 0.11em;
-  color: #FFFFFF;
-  border: 0px solid #FFFFFF;
+  color: #ffffff;
+  border: 0px solid #ffffff;
   transform: matrix(-1, 0, 0, 1, 0, 0);
-
 }
 
 .seccion9>p {
@@ -490,13 +554,12 @@ body {
   margin-left: 100px;
   width: 578px;
   height: 95px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 94.5%;
   color: #000000;
-
 }
 
 .seccion9>#img_copyright {
