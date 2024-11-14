@@ -403,7 +403,7 @@ body {
 
 .seccion4>h1 {
   position: absolute;
-  top: 2787px;
+  top: 2587px;
   width: 950px;
   height: 153px;
   left: calc(50% - 950px / 2);
@@ -427,7 +427,7 @@ body {
 
 .seccion4>button {
   position: absolute;
-  top: 3515px;
+  top: 3315px;
   width: 540px;
   height: 66px;
   left: calc(50% - 540px / 2);
@@ -479,12 +479,11 @@ body {
   margin-bottom: 284px;
 }
 
-.seccion5>.img-sec4 {
+.seccion5>.img-sec4 > img {
   position: absolute;
   width: 291px;
-  height: 436px;
   margin-left: 243px;
-  top: 4642px;
+  top: 4442px;
 }
 
 .seccion5>h1 {
@@ -545,7 +544,7 @@ body {
 
 .seccion7>img {
   position: absolute;
-  top: 11062px;
+  top: 10862px;
   margin-left: 599px;
 }
 
@@ -753,6 +752,7 @@ body {
 
 /*footer*/
 footer {
+  margin-top: 181px;
   width: 1280px;
   background-color: #5E5E5D;
   overflow: hidden;
