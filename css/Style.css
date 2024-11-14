@@ -12,18 +12,17 @@ body {
 }
 
 .containerPrincipal {
-  width: 100%;
-
+  width: 1280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   background-image: url("../img/sector1/fondo-sector1.png");
-  background-repeat: round;
+  background-repeat: no-repeat;
 }
 
 .contenido {
-  width: inherit;
+  width: 1280px;
 }
 
 .contenido-1080 {
@@ -260,7 +259,7 @@ body {
   position: absolute;
   width: 508px;
   height: 132px;
-  left: 100px;
+  margin-left: 100px;
   top: 1014px;
   font-family: "Lato";
   font-style: normal;
@@ -275,7 +274,7 @@ body {
   position: absolute;
   width: 704px;
   height: 154px;
-  left: 100px;
+  margin-left: 100px;
   top: 1168px;
   margin-left: 100px;
   font-family: "Lato";
@@ -300,7 +299,7 @@ body {
   position: absolute;
   width: 576.38px;
   height: 324.35px;
-  left: 236px;
+  margin-left: 236px;
   top: 1290px;
   border: 29px solid #1b5f99;
   border-radius: 77px;
@@ -363,7 +362,7 @@ body {
 .seccion4>img {
   z-index: 1;
   margin-top: 390px;
-  margin-left: 35px;
+
 }
 
 .seccion4>button {
@@ -523,7 +522,6 @@ body {
 .seccion8 {
   margin-top: 54px;
   height: 729px;
-  margin-left: 100px;
 }
 
 
@@ -714,6 +712,7 @@ footer p {
   width: 820px;
   color: #ffffff;
   font-weight: 400;
+  font-family: "Lato";
   font-size: 20px;
   line-height: 0.945;
   letter-spacing: 0.11em;
