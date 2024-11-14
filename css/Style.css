@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -12,7 +13,6 @@ body {
 
 .containerPrincipal {
   width: 1280px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,9 +20,11 @@ body {
   background-image: url("../img/sector1/fondo-sector1.png");
   background-repeat: no-repeat;
 }
+
 .contenido {
   width: 1280px;
 }
+
 .contenido-1080 {
   padding-left: 100px;
   padding-right: 100px;
@@ -71,19 +73,23 @@ body {
   margin-left: 260px;
   top: 55px;
 }
-.seccion1 > .ContenedorFiguras {
+
+.seccion1>.ContenedorFiguras {
   display: flex;
 }
+
 .figura1,
 .figura2,
 .figura3 {
   position: absolute;
 }
+
 .figura1 {
   top: 527.28px;
   left: 411px;
   z-index: 2;
 }
+
 .sombraFigura1 {
   position: absolute;
   width: 140px;
@@ -102,6 +108,7 @@ body {
 
   z-index: 1;
 }
+
 .sombraFigura2 {
   position: absolute;
   width: 140px;
@@ -112,12 +119,14 @@ body {
   background: rgba(68, 104, 63, 0.61);
   filter: blur(13.5px);
 }
+
 .figura3 {
   width: 174px;
   height: 384px;
   top: 338px;
   left: 700.25px;
 }
+
 .sombraFigura3 {
   position: absolute;
   width: 140px;
@@ -134,40 +143,45 @@ body {
   z-index: 1;
 }
 
-.presentacion1 > .arbolGrande {
+.presentacion1>.arbolGrande {
   position: absolute;
   top: -400px;
   z-index: -1;
-  left: 0px; /* Un z-index negativo lo coloca detrás */
+  left: 0px;
+  /* Un z-index negativo lo coloca detrás */
 }
 
 /* Coloca el botón de menú por encima */
-.navSeccion1 > .MenuHamburguesa > .btnMenu {
+.navSeccion1>.MenuHamburguesa>.btnMenu {
   margin-top: 20px;
   position: relative;
   z-index: 2;
 }
-.presentacion1 > .arbolGrande {
+
+.presentacion1>.arbolGrande {
   position: absolute;
   top: 20px;
   z-index: 1;
 }
 
-.navSeccion1 > .MenuHamburguesa > .btnMenu {
+.navSeccion1>.MenuHamburguesa>.btnMenu {
   margin-top: 20px;
   z-index: 5;
 }
+
 .arbustoPresentacion {
   position: absolute;
   top: 717.97px;
   left: 161.38px;
 }
+
 .piedraPresentacion {
   position: absolute;
   top: 793.37px;
   left: 129.07px;
   z-index: 3;
 }
+
 .arbustoPresentacion2 {
   position: absolute;
   top: 821.65px;
@@ -181,6 +195,7 @@ body {
   top: 106.71px;
   z-index: 3;
 }
+
 .piedraIzq,
 .piedraMedio,
 .piedraDerecha,
@@ -189,34 +204,41 @@ body {
 .arbusto2Fondo {
   position: absolute;
 }
+
 .piedraIzq {
   top: 737.5px;
   left: 1040.84px;
   z-index: 4;
 }
+
 .piedraMedio {
   top: 786.64px;
   left: 1090.84px;
   z-index: 5;
 }
+
 .piedraDerecha {
   top: 737.5px;
   left: 1072.22px;
   z-index: 4;
 }
+
 .arbolFondo {
   left: 1080.97px;
   top: 278.38px;
   z-index: 1;
 }
-.arbolFondo > .arbolImg {
+
+.arbolFondo>.arbolImg {
   clip-path: inset(0 80px 0 0);
 }
+
 .arbusto1Fondo {
   top: 630.46px;
   left: 1028.46px;
   z-index: 0;
 }
+
 .arbusto2Fondo {
   top: 662.1px;
   left: 1080.97px;
@@ -226,19 +248,18 @@ body {
 
 .seccion2 {
   height: 894px;
-  clip-path: path(
-    "M0 742.37C183.201 870.171 655 790.5 655 790.5C655 790.5 1037.37 755.612 1280 894V0H0V742.37Z"
-  );
+  clip-path: path("M0 742.37C183.201 870.171 655 790.5 655 790.5C655 790.5 1037.37 755.612 1280 894V0H0V742.37Z"
+    );
   background-image: linear-gradient(180deg, #88de7f 0%, #a8ebec 46%);
   z-index: 1;
-  
+
 }
 
 .tituloJuego {
   position: absolute;
   width: 508px;
   height: 132px;
-  left: 100px;
+  margin-left: 100px;
   top: 1014px;
   font-family: "Lato";
   font-style: normal;
@@ -248,11 +269,12 @@ body {
   margin-left: 100px;
   color: #1b428f;
 }
+
 .parrafoJuego {
   position: absolute;
   width: 704px;
   height: 154px;
-  left: 100px;
+  margin-left: 100px;
   top: 1168px;
   margin-left: 100px;
   font-family: "Lato";
@@ -263,6 +285,7 @@ body {
 
   color: #1b428f;
 }
+
 .partesJuego {
   width: 576.38px;
   height: 324.35px;
@@ -276,7 +299,7 @@ body {
   position: absolute;
   width: 576.38px;
   height: 324.35px;
-  left: 236px;
+  margin-left: 236px;
   top: 1290px;
   border: 29px solid #1b5f99;
   border-radius: 77px;
@@ -291,15 +314,16 @@ body {
 
   position: absolute;
   top: 1491px;
-  left: 130px;
+  margin-left: 44px;
   z-index: 1;
- 
+
 }
-.figura5{
+
+.figura5 {
   position: absolute;
-  
+
   top: 867px;
-  left: 903px;
+  margin-left: 803px;
   gap: 0px;
   opacity: 0px;
   z-index: 1;
@@ -317,7 +341,7 @@ body {
   background-position: center top;
 }
 
-.seccion4 > h1 {
+.seccion4>h1 {
   position: absolute;
   top: 2787px;
   width: 950px;
@@ -335,12 +359,13 @@ body {
   z-index: 2;
 }
 
-.seccion4 > img {
+.seccion4>img {
   z-index: 1;
   margin-top: 390px;
+
 }
 
-.seccion4 > button {
+.seccion4>button {
   position: absolute;
   top: 3515px;
   width: 540px;
@@ -364,7 +389,7 @@ body {
   height: 5274px;
 }
 
-.seccion5 > .textos > div {
+.seccion5>.textos>div {
   position: relative;
   width: 467px;
   height: 148px;
@@ -378,7 +403,7 @@ body {
   color: #000000;
 }
 
-.seccion5 > .textos > div > h1 {
+.seccion5>.textos>div>h1 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -388,13 +413,13 @@ body {
   margin-bottom: 15px;
 }
 
-.seccion5 > .textos > .tx-1 {
+.seccion5>.textos>.tx-1 {
   position: relative;
   margin-top: 159px;
   margin-bottom: 284px;
 }
 
-.seccion5 > .img-sec4 {
+.seccion5>.img-sec4 {
   position: absolute;
   width: 291px;
   height: 436px;
@@ -402,7 +427,7 @@ body {
   top: 4642px;
 }
 
-.seccion5 > h1 {
+.seccion5>h1 {
   position: relative;
   margin-top: 174px;
   margin-left: 100px;
@@ -416,7 +441,43 @@ body {
 
 .seccion6 {
   height: 1443.83px;
+  width: 100%;
+  max-width: 1280px;
+  background-color: #EFB71E;
+  clip-path: path('M-83 56.0049C135 -108.5 905.5 152.502 1346 56.0049V1444C776.18 1413.21 444.167 1363.12 -83 1444V56.0049Z');
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
+
+.seccion6>img {
+  position: absolute;
+  width: 587px;
+  height: 989px;
+  right: -17px;
+  margin-top: -687px;
+  overflow: visible;
+}
+
+.seccion6>h1 {
+  width: 802px;
+  margin-top: 300px;
+  margin-left: 100px;
+  font-weight: 600;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.seccion6 iframe {
+  width: 804px;
+  height: 452px;
+  display: block;
+  margin-left: 100px;
+  margin-top: 36px;
+  border-radius: 45px;
+  border: 29px solid white;
+}
+
 
 .seccion7 {
   height: 973px;
@@ -467,10 +528,10 @@ body {
 
 .seccion9 {
   margin-top: 190px;
-  height: 1296px
+  height: 1296px;
 }
 
-.seccion9 > h1 {
+.seccion9>h1 {
   position: relative;
   width: 816px;
   height: 171px;
@@ -569,31 +630,37 @@ body {
 
 .seccion9>#imagen_fondo {
   position: absolute;
-  width: 1280px;
-  height: 1296px;
-  margin-left: 0px;
-  top: 13092px;
+  margin-left: -331px;
+  top: 12989px;
   z-index: -1;
-  background: linear-gradient(180deg, #E0D299 0%, #ADF8FD 47.09%, #EDFDFF 88.29%, #FFFFFF 107.02%);
-  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.seccion9>#colina {
+  position: absolute;
+  width: 1280px;
+  height: 389px;
+  margin-left: -331px;
+  top: 13896px;
+  z-index: 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+
 }
 
 .seccion9>#nube1 {
   position: absolute;
   width: 265px;
   height: 124px;
-  margin-left: 794px;
+  margin-left: 463px;
   top: 13316px;
-  background: url('../img/sector9/nube1.png');
 }
 
 .seccion9>#nube2 {
   position: absolute;
   width: 387px;
   height: 181px;
-  margin-left: 962px;
+  margin-left: 631px;
   top: 13359px;
-  background: url('../img/sector9/nube2.png');
+  clip-path: inset(0 69px 0 0);
 
 }
 
@@ -601,10 +668,27 @@ body {
   position: absolute;
   width: 387px;
   height: 181px;
-  margin-left: -56px;
+  margin-left: -387px;
   top: 13618px;
-  background: url('../img/sector9/nube3.png');
+  clip-path: inset(0 0 0 56px);
+}
 
+.seccion9>#imagen1 {
+  position: absolute;
+  margin-left: 425px;
+  top: 13328px;
+}
+
+.seccion9>#imagen2 {
+  position: absolute;
+  margin-left: -266px;
+  top: 13763px;
+}
+
+.seccion9>#imagen3 {
+  position: absolute;
+  margin-left: 76px;
+  top: 13734px;
 }
 
 /*footer*/
@@ -616,35 +700,33 @@ footer {
 
 footer .img_paginas_game {
   background-color: #242424;
-
 }
 
 footer .img_paginas_game img {
   width: 1080px;
   margin-left: 100px;
   margin-right: 100px;
-
 }
 
-footer p,
-footer .cookie {
+footer p {
   width: 820px;
   color: #ffffff;
   font-weight: 400;
+  font-family: "Lato";
   font-size: 20px;
-  line-height: 94.5%;
-  letter-spacing: 11%;
-  margin: 35px 355px 24px 100px
+  line-height: 0.945;
+  letter-spacing: 0.11em;
+  margin: 35px 355px 24px 100px;
 }
 
-.cookie {
+footer .cookie {
   color: #ffffff;
   margin-left: 100px;
   margin-top: 10px;
-
+  margin-bottom: 24px;
 }
 
-.cookie a {
+footer .cookie a {
   color: #ffffff;
   text-decoration: underline;
   font-weight: bold;
