@@ -4,52 +4,71 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body{
+  display: grid;
+  grid-template-rows: [header-start seccion1-start] 100px [header-end] auto [seccion1-end] auto;
+  grid-template-columns: [fit-start] auto [fit-end];
 }
 
-.containerPrincipal {
-  width: 1280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  background-image: url("../img/sector1/fondo-sector1.png");
-  background-repeat: no-repeat;
-}
-
-.contenido {
-  width: 1280px;
-}
 
 .contenido-1080 {
   padding-left: 100px;
   padding-right: 100px;
+ grid-row: seccion1;
+ grid-column: fit;
+ 
+ 
+
+
 }
 
 .seccion1 {
-
-  width: inherit;
+  background-image: url("../img/sector1/fondo-sector1.png");
+  background-repeat: no-repeat;
   height: 959px;
+  grid-row: seccion1;
+
+  
+  
+}
+.headerSeccion1{
+   height: 100px;
+   grid-row: header;
+   position: sticky;
+   grid-column: fit;
+   top: 0;
+   z-index: 9;
+   width: 1280px;
+   padding-left: 100px;
+   padding-right: 100px;
+   display: flex;
+   align-items: center;
+    margin-left: 100px;
+   
 }
 
-.seccion1>.headerSeccion1>.navSeccion1 {
+  .imagenLogo{
+    margin-left: 214px;
+  }
+
+.headerSeccion1>.navSeccion1 {
   z-index: 10;
   display: flex;
-  /* margin-left: 100px;
-  margin-right: 100px; */
+  height: 100px;
+  justify-content: space-around;
+ 
+
 
 }
 
+.navSeccion1>.cont-btnComprar{
+  position: relative;
+
+}
 .navSeccion1>.cont-btnComprar>.btnComprar {
   position: absolute;
   width: 200px;
   height: 50px;
-  left: 980px;
-  top: 20px;
   background: #83C252;
   border: 8px solid #FFFFFF;
   box-shadow: 4px 5px 0px #02187E;
@@ -59,23 +78,19 @@ body {
   font-size: 20px;
   font-weight: 900;
   line-height: 18.9px;
-
+  left: 826px;
+  top: 20px;
 
 }
 
 
-.navSeccion1>.MenuHamburguesa>.btnMenu {
 
-  margin-top: 20px;
-}
 
-.imagenLogo {
-  margin-left: 260px;
-  top: 55px;
-}
+
 
 .seccion1>.ContenedorFiguras {
   display: flex;
+  position: relative;
 }
 
 .figura1,
