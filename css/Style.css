@@ -8,14 +8,15 @@ body{
   display: grid;
   grid-template-rows: [header-start seccion1-start] 100px [header-end] auto [seccion1-end] auto;
   grid-template-columns: [fit-start] auto [fit-end];
+  margin-left: 100px;
 }
 
 
 .contenido-1080 {
-  padding-left: 100px;
-  padding-right: 100px;
+  
  grid-row: seccion1;
  grid-column: fit;
+ width: 1280px;
  
  
 
@@ -45,7 +46,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center; 
-  margin-left: 100px;
+ 
 
 }
 .headerSeccion1>.navSeccion1{
@@ -68,23 +69,16 @@ body{
   font-weight: 900;
   text-align: center;
   line-height: 34px;
+  
 }
 .imgLogo{
   margin-left: 100px;
   margin-top: 300px;
 }
 .headerScroll{
- 
-    background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, rgba(1, 208, 213, 0) 100%);
-  
+background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, rgba(1, 208, 213, 0) 100%);
   
 }
-
-
-
-
-
-
 
 
 .seccion1>.ContenedorFiguras {
