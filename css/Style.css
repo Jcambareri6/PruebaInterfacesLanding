@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   display: grid;
   grid-template-rows: [header-start seccion1-start] 100px [header-end] auto [seccion1-end] auto;
   grid-template-columns: [fit-start] auto [fit-end];
@@ -28,11 +28,12 @@ body{
   background-repeat: no-repeat;
   height: 959px;
   grid-row: seccion1;
-  
 
-  
-  
+
+
+
 }
+
 .headerSeccion1 {
   height: 100px;
   grid-row: header;
@@ -40,20 +41,21 @@ body{
   grid-column: fit;
   top: 0;
   z-index: 9;
-  width: 100%; 
-  max-width: 1280px; 
-  padding: 0 100px; 
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 100px;
   display: flex;
   align-items: center;
   justify-content: center; 
  
 
 }
-.headerSeccion1>.navSeccion1{
- width: 1080px; 
- display: flex;
- justify-content: space-between;
- align-items: center;
+
+.headerSeccion1>.navSeccion1 {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btnComprar {
@@ -71,7 +73,8 @@ body{
   line-height: 34px;
   
 }
-.imgLogo{
+
+.imgLogo {
   margin-left: 100px;
   margin-top: 300px;
 }
@@ -164,6 +167,8 @@ background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, 
   margin-top: 20px;
   position: relative;
   z-index: 2;
+  border: none;
+  background-color: transparent;
 }
 
 .presentacion1>.arbolGrande {
@@ -175,6 +180,123 @@ background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, 
 .navSeccion1>.MenuHamburguesa>.btnMenu {
   margin-top: 20px;
   z-index: 5;
+}
+
+.MenuHamburguesa .btnMenu .linea1,
+.MenuHamburguesa .btnMenu .linea2,
+.MenuHamburguesa .btnMenu .linea3 {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+@keyframes giralinea1 {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  100% {
+    transform: rotate(45deg) translate(5px, 9px);
+  }
+}
+
+@keyframes lineagira3 {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  100% {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+@keyframes desaparceLinea {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.btnMenu.open .linea1 {
+  animation: giralinea1 0.3s forwards;
+}
+
+.btnMenu.open .linea2 {
+  animation: desaparceLinea 0.3s forwards;
+}
+
+.btnMenu.open .linea3 {
+  animation: lineagira3 0.3s forwards;
+}
+
+/* Aparición de ítems del menú */
+.menuItems {
+  position: absolute;
+  top: 60px;
+  right: -200px;
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9;
+}
+
+.menuItems.open {
+  top: 100px;
+  left: 110px;
+  opacity: 1;
+  animation: menuSlideIn 0.5s ease forwards;
+  background-color: rgba(68, 104, 63);
+  width: 100px;
+}
+
+.menuItems li {
+  font-family: Lato;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInItem 0.5s ease forwards;
+  color: #ffffff;
+}
+
+.menuItems li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.menuItems li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.menuItems li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes menuSlideIn {
+  0% {
+    right: -200px;
+    opacity: 0;
+  }
+
+  100% {
+    right: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInItem {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .arbustoPresentacion {
@@ -311,11 +433,10 @@ background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, 
   top: 1290px;
   border: 29px solid #1b5f99;
   border-radius: 77px;
-  background: url(../img/sector2/FondoDiv.png);
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: background-image 1s ease-in-out;
 }
 
 .figura4 {

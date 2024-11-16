@@ -1,6 +1,6 @@
 
 const header = document.getElementById("header1")
-const logoHeader= document.getElementById("fotoLogo")
+const logoHeader = document.getElementById("fotoLogo")
 const contLogo = document.getElementById("")
 let anchoInicial = 560;
 let altoInicial = 320;
