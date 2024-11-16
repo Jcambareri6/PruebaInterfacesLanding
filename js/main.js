@@ -1,7 +1,8 @@
 // Logo Header
 const header = document.getElementById("header1");
 const logoHeader = document.getElementById("fotoLogo");
-
+const imag = document.querySelectorAll('.img-sec4 img');
+const textos = document.querySelectorAll('.textos > div');
 let anchoInicial = 560;
 let altoInicial = 320;
 let anchoFinal = 150;
@@ -9,23 +10,34 @@ let alturaFinal = 86;
 let scrollLimite = 300;
 
 window.addEventListener("scroll", function () {
-    const scrollTop = Math.min(window.scrollY, scrollLimite);
+    const scrollEvento = window.scrollY;
+    // punto 4 
+    animarHeader(scrollEvento)
+    //parallax seccion 1 
+    animarParallaxSeccion1(scrollEvento)
+     animarSeccionTextos
 
-    // Calcular el tamaño actual del logo en función del scroll
-    const anchoActual = anchoInicial - (anchoInicial - anchoFinal) * (scrollTop / scrollLimite);
-    const topActual = scrollTop * (140 / scrollLimite); // Ajusta la proporción según tu diseño
+ 
+    
+    
+});
+function animarHeader(scrollY){
+    let scrollTop = Math.min(scrollY, scrollLimite);
+    let anchoActual = anchoInicial - (anchoInicial - anchoFinal) * (scrollTop / scrollLimite); // calcula porc para achicar img
+    let topActual = Math.min(scrollTop, 150); 
 
     // Aplicar los nuevos valores al logo
     logoHeader.style.width = `${anchoActual}px`;
     logoHeader.style.transform = `translateY(-${topActual}px)`;
-
-    // Asegurar que se agregue la clase al header
-    if (window.scrollY >= scrollLimite) {
+   
+    if(window.scrollY>=scrollLimite){
+       
+        // Asegurarte de que tenga 'headerScroll'
         header.classList.add('headerScroll');
-    } else {
-        header.classList.remove('headerScroll');
     }
-});
+};
+
+
 
 // Menú (Sección 2)
 document.addEventListener('DOMContentLoaded', () => {
@@ -58,8 +70,7 @@ setInterval(cambiarFondo, 3000);
 cambiarFondo();
 
 // Sección 5: Cambio de imágenes en scroll sincronizado con textos
-const imag = document.querySelectorAll('.img-sec4 img');
-const textos = document.querySelectorAll('.textos > div');
+
 
 // Función para cambiar la imagen activa
 function cambiarImagenActiva(index) {
@@ -74,8 +85,8 @@ function cambiarImagenActiva(index) {
     });
 }
 
-// Detectar el texto visible en el viewport
-window.addEventListener('scroll', () => {
+
+function animarSeccionTextos(){
     textos.forEach((texto, index) => {
         const rect = texto.getBoundingClientRect();
         const visible = rect.top < window.innerHeight && rect.bottom > 0;
@@ -84,7 +95,26 @@ window.addEventListener('scroll', () => {
             cambiarImagenActiva(index);
         }
     });
-});
-
+}
+function animarParallaxSeccion1(scrollY){
+    let elementos = document.querySelectorAll("[data-velocidad]");
+   
+    let initScroll =170
+    let limitScroll= 270
+  
+    elementos.forEach(elementoPrimerPlano =>{
+        mover(scrollY,initScroll,limitScroll,elementoPrimerPlano,);
+    })
+   
+}
+ function mover(scrollY,initScroll,limitScroll,elemento ){
+   
+    if (scrollY >= initScroll && scrollY <= limitScroll) {
+        let velocidad = parseFloat(elemento.getAttribute("data-velocidad"));
+        let movimiento =  (scrollY-initScroll)*velocidad
+        elemento.style.transform = `translateY(${movimiento}px)`;
+ 
+     }
+    }
 // Inicializar la primera imagen como activa
 cambiarImagenActiva(0);

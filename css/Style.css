@@ -429,7 +429,7 @@ background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, 
   position: absolute;
   width: 576.38px;
   height: 324.35px;
-
+  z-index: 4;
   top: 1290px;
   border: 29px solid #1b5f99;
   border-radius: 77px;
