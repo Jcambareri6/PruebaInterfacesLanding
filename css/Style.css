@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   display: grid;
   grid-template-rows: [header-start seccion1-start] 100px [header-end] auto [seccion1-end] auto;
   grid-template-columns: [fit-start] auto [fit-end];
@@ -14,10 +14,10 @@ body{
 .contenido-1080 {
   padding-left: 100px;
   padding-right: 100px;
- grid-row: seccion1;
- grid-column: fit;
- 
- 
+  grid-row: seccion1;
+  grid-column: fit;
+
+
 
 
 }
@@ -27,11 +27,12 @@ body{
   background-repeat: no-repeat;
   height: 959px;
   grid-row: seccion1;
-  
 
-  
-  
+
+
+
 }
+
 .headerSeccion1 {
   height: 100px;
   grid-row: header;
@@ -39,20 +40,21 @@ body{
   grid-column: fit;
   top: 0;
   z-index: 9;
-  width: 100%; 
-  max-width: 1280px; 
-  padding: 0 100px; 
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 100px;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   margin-left: 100px;
 
 }
-.headerSeccion1>.navSeccion1{
- width: 1080px; 
- display: flex;
- justify-content: space-between;
- align-items: center;
+
+.headerSeccion1>.navSeccion1 {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btnComprar {
@@ -69,15 +71,17 @@ body{
   text-align: center;
   line-height: 34px;
 }
-.imgLogo{
+
+.imgLogo {
   margin-left: 100px;
   margin-top: 300px;
 }
-.headerScroll{
- 
-    background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, rgba(1, 208, 213, 0) 100%);
-  
-  
+
+.headerScroll {
+
+  background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, rgba(1, 208, 213, 0) 100%);
+
+
 }
 
 
@@ -170,6 +174,8 @@ body{
   margin-top: 20px;
   position: relative;
   z-index: 2;
+  border: none;
+  background-color: transparent;
 }
 
 .presentacion1>.arbolGrande {
@@ -181,6 +187,26 @@ body{
 .navSeccion1>.MenuHamburguesa>.btnMenu {
   margin-top: 20px;
   z-index: 5;
+}
+
+.MenuHamburguesa .btnMenu .line1,
+.MenuHamburguesa .btnMenu .line2,
+.MenuHamburguesa .btnMenu .line3 {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* Transformaciones cuando el menú está abierto */
+.MenuHamburguesa .btnMenu.open .line1 {
+  transform: rotate(45.5deg)translate(5px, 9.5px);
+}
+
+.MenuHamburguesa .btnMenu.open .line2 {
+  opacity: 0;
+}
+
+.MenuHamburguesa .btnMenu.open .line3 {
+  transform: rotate(-45.5deg)translate(5px, -5px);
 }
 
 .arbustoPresentacion {
