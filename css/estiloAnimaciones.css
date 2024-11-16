@@ -1,1 +1,16 @@
-/*  */
+.seccion4>img {
+    transform: translate(0, 0); /* Posición inicial */
+    transition: transform 0.1s ease-out; /* Movimiento suave */
+}
+
+.seccion3>.contenedorCards>.card {
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(50px); /* Desplazadas hacia abajo */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  /* Clase para activar la animación */
+  .card.visible {
+    opacity: 1; /* Se vuelven visibles */
+    transform: translateY(0); /* Vuelven a su posición */
+  }
