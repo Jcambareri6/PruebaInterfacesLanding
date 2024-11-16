@@ -28,8 +28,36 @@ window.addEventListener("scroll", function () {
         header.classList.add('headerScroll');
     }
 });
-const menuButton = document.querySelector('.btnMenu');
-menuButton.addEventListener('click', () => {
-    console.log('Botón de menú clicado'); // Para verificar si se registra el clic
-    menuButton.classList.toggle('open');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.btnMenu');
+    const menuItems = document.querySelector('.menuItems');
+
+    menuButton.addEventListener('click', () => {
+        menuButton.classList.toggle('open');
+        menuItems.classList.toggle('open');
+    });
 });
+const imagenes = [
+    'img/sector2/FondoDiv.png',
+    'img/sector2/fondodiv2.png',
+    'img/sector2/fondodiv3.png',
+    'img/sector2/fondodiv4.png'
+];
+
+// Selección del contenedor
+const imgFondo = document.getElementById('img-fondo');
+
+// Índice actual
+let indiceActual = 0;
+
+// Función para cambiar el fondo
+function cambiarFondo() {
+    imgFondo.style.backgroundImage = `url(${imagenes[indiceActual]})`;
+    indiceActual = (indiceActual + 1) % imagenes.length; // Ciclar el índice
+}
+
+// Cambiar fondo cada 5 segundos
+setInterval(cambiarFondo, 3000);
+
+// Establecer el primer fondo
+cambiarFondo();
