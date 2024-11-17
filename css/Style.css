@@ -430,7 +430,7 @@ body {
   position: absolute;
   width: 576.38px;
   height: 324.35px;
-
+  z-index: 4;
   top: 1290px;
   border: 29px solid #1b5f99;
   border-radius: 77px;
