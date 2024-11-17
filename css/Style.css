@@ -477,7 +477,7 @@ body {
 
 .containerCardImg {
   box-sizing: border-box;
-  margin-top: 261px;
+  margin-top: 540px;
   width: 332.96px;
   height: 302.69px;
   border: 9px solid #2982FF;
@@ -489,6 +489,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .card2 {
   background: url("../img/sector2/card2.png");
