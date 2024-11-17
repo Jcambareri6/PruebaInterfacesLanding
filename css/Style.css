@@ -476,7 +476,7 @@ background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, 
 
 .containerCardImg {
   box-sizing: border-box;
-  margin-top: 261px;
+  margin-top: 540px;
   width: 332.96px;
   height: 302.69px;
   border: 9px solid #2982FF;
@@ -488,6 +488,7 @@ background: linear-gradient(180deg, #00D1D5 0%, rgba(0, 209, 213, 0.12) 87.91%, 
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .card2 {
   background: url("../img/sector2/card2.png");

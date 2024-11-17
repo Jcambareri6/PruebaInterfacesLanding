@@ -14,5 +14,10 @@ window.addEventListener('scroll', () => {
     partes.style.transform = `translateY(${scrollPosition * 0.12}px)`; 
 
     figura4.style.transform = `translateY(${scrollPosition * 0.06}px)translateX(${scrollPosition * -0.03}px)`; 
-    figura5.style.transform = `translateY(${scrollPosition * 0.12}px)translateX(${scrollPosition * 0.04}px)`; 
+    figura5.style.transform = `translateY(${scrollPosition * 0.14}px)`; 
 })
+
+
+
+
+
