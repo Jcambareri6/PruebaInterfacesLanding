@@ -57,34 +57,3 @@ function cambiarFondo() {
 setInterval(cambiarFondo, 3000);
 cambiarFondo();
 
-// Sección 5: Cambio de imágenes en scroll sincronizado con textos
-const imag = document.querySelectorAll('.img-sec4 img');
-const textos = document.querySelectorAll('.textos > div');
-
-// Función para cambiar la imagen activa
-function cambiarImagenActiva(index) {
-    imag.forEach((img, i) => {
-        if (i === index) {
-            img.style.opacity = '1';
-            img.style.transform = 'scale(1)';
-        } else {
-            img.style.opacity = '0';
-            img.style.transform = 'scale(1.1)';
-        }
-    });
-}
-
-// Detectar el texto visible en el viewport
-window.addEventListener('scroll', () => {
-    textos.forEach((texto, index) => {
-        const rect = texto.getBoundingClientRect();
-        const visible = rect.top < window.innerHeight && rect.bottom > 0;
-
-        if (visible) {
-            cambiarImagenActiva(index);
-        }
-    });
-});
-
-// Inicializar la primera imagen como activa
-cambiarImagenActiva(0);
