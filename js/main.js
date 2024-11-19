@@ -116,24 +116,32 @@ function mover(scrollY, initScroll, limitScroll, elemento) {
 
     }
 }
- function animarSeccionTextos(scrollY){
+let currentImage = ""; 
+
+function animarSeccionTextos(scrollY) {
     let img = document.getElementById("imagenDinamica");
     let seccionesTxt = document.querySelectorAll("[data-img]");
-    let contenedorImgDinamica = document.getElementById("contenedorImgDinamica");
-    seccionesTxt.forEach(seccion =>{
-        const rect = seccion.getBoundingClientRect(); 
-        const sectionTop = seccion.offsetTop-200; 
+    
+    seccionesTxt.forEach(seccion => {
+        const rect = seccion.getBoundingClientRect();
+        const sectionTop = seccion.offsetTop-200;
         const sectionHeight = seccion.offsetHeight;
-        if (scrollY>= sectionTop && scrollY< sectionTop + sectionHeight ) {
-            const newImage = seccion.getAttribute('data-img'); 
 
-            if (img.src !== newImage) {
-                
-                img.src = newImage;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            const newImage = seccion.getAttribute('data-img');
             
+            // Solo cambia la imagen si es diferente de la actual
+            if (currentImage !== newImage) {
+                currentImage = newImage; // Actualiza la imagen activa
+                img.classList.remove('img-animada');
+
+                setTimeout(() => {
+                    img.src = newImage;
+                    img.classList.add('img-animada');
+                }, 150);
             }
         }
-    })
- }
+    });
+}
 // Inicializar la primera imagen como activa
 cambiarImagenActiva(0);

@@ -607,18 +607,12 @@ body {
   
 }
 
-
-.img-sec4 > img.visible {
-  opacity: 1; 
-  transform: translateY(0);
-}
 .textos {
   flex: 1; 
   max-height: 4884px;
   display: flex;
   flex-direction: column;
   margin-top: 159px;
-
    gap: 250px;
 }
 
@@ -632,7 +626,21 @@ body {
   color: #000000;
   width: 467px; 
 }
+@keyframes aparecerImagen {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
 
+
+.img-animada {
+  animation: aparecerImagen 0.5s  ease forwards;
+}
 .textos > div h1 {
   font-family: "Lato";
   font-style: normal;
