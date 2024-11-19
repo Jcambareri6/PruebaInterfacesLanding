@@ -827,7 +827,7 @@ body {
 
 .seccion8>.imagenes-inidi img {
   height: 374px;
-  width: 252px;
+  width: 243.2px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -835,7 +835,7 @@ body {
 
 .seccion8>.imagenes-inidi2 img {
   height: 324px;
-  width: 252px;
+  width: 243.2px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
