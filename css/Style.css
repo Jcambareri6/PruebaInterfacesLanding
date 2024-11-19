@@ -438,6 +438,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   transition: background-image 1s ease-in-out;
+  z-index: 0;
 }
 
 .figura4 {
@@ -537,7 +538,7 @@ body {
   top: 2587px;
   width: 950px;
   height: 153px;
-  left: calc(50% - 950px / 2);
+  left: 265px;
   margin-top: 575px;
   font-family: "Lato";
   font-style: normal;
@@ -561,7 +562,7 @@ body {
   top: 3315px;
   width: 540px;
   height: 66px;
-  left: calc(50% - 540px / 2);
+  left: 465px;
   margin-top: 62px;
   background: #83c252;
   border: 8px solid #ffffff;
@@ -756,6 +757,11 @@ body {
 .seccion8 {
   margin-top: 54px;
   height: 729px;
+}
+
+.seccion8>div:hover {
+  transform:scale(1.1); 
+    box-shadow: 0 0 30px grey;
 }
 
 
