@@ -119,13 +119,16 @@ function mover(scrollY, initScroll, limitScroll, elemento) {
  function animarSeccionTextos(scrollY){
     let img = document.getElementById("imagenDinamica");
     let seccionesTxt = document.querySelectorAll("[data-img]");
+    let contenedorImgDinamica = document.getElementById("contenedorImgDinamica");
     seccionesTxt.forEach(seccion =>{
         const rect = seccion.getBoundingClientRect(); 
-        const sectionTop = rect.top +  window.scrollY;
-        const sectionHeight = rect.height; 
-        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        const sectionTop = seccion.offsetTop-200; 
+        const sectionHeight = seccion.offsetHeight;
+        if (scrollY>= sectionTop && scrollY< sectionTop + sectionHeight ) {
             const newImage = seccion.getAttribute('data-img'); 
+
             if (img.src !== newImage) {
+                
                 img.src = newImage;
             
             }

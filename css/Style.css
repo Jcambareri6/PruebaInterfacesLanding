@@ -586,34 +586,39 @@ body {
   padding-right: 100px;
   gap: 197px;
   height: inherit;
- /* Asegura que los elementos estén alineados arriba */
+
 }
 
 .img-sec4 {
-  height: 300px; 
-  width: 100%; 
+  
+  width: 100%;
+  max-width: 800px;
+  max-height: 500px;
   position: sticky;
-  top: 70px;
-  margin-top: 123px;
+  top: 20px;
   margin-left: 125px;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+
 }
 
 .img-sec4 > img {
+  margin-top: 55px;
   width: 100%; 
-  transition: opacity 0.3s ease-in-out;
+  height: 100%; 
   
 }
 
+
+.img-sec4 > img.visible {
+  opacity: 1; 
+  transform: translateY(0);
+}
 .textos {
   flex: 1; 
   max-height: 4884px;
   display: flex;
   flex-direction: column;
   margin-top: 159px;
-   /* Espaciado entre las secciones */
+
    gap: 250px;
 }
 
