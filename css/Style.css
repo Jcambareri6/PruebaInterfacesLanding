@@ -780,7 +780,7 @@ body {
   position: absolute;
   width: 816px;
   height: 171px;
-  top: 13202px;
+  top: 12933px;
   margin-left: 100px;
   font-family: 'Lato';
   font-style: normal;
@@ -794,7 +794,7 @@ body {
   position: absolute;
   width: 734;
   height: 100px;
-  top: 13402px;
+  top: 13139px;
   margin-left: 100px;
 }
 
@@ -869,13 +869,13 @@ form>.btnSubmit>p {
 
 .parrafoSeccion9 {
   margin-left: 100px;
-  /* Al inscribirse en nuestra lista de correo, nos autoriza a ponernos en contacto con usted para enviarle ofertas y actualizaciones de marketing por correo electrónico, y también acepta nuestra Política de privacidad y las Condiciones del servicio. */
+ 
 
   position: absolute;
   width: 578px;
   height: 95px;
   left: 100px;
-  top: 13558px;
+  top: 13287px;
 
   font-family: 'Lato';
   font-style: normal;
@@ -896,7 +896,7 @@ form>.btnSubmit>p {
 .imagenRecomendacion {
   margin-left: 100px;
   position: absolute;
-  top: 13653px;
+  top: 13393px;
 
 }
 
@@ -927,6 +927,7 @@ form>.btnSubmit>p {
 .f1>img {
   width: 480px;
   height: 480px;
+  margin-top: -250px;
 
 }
 
@@ -934,12 +935,13 @@ form>.btnSubmit>p {
   width: 509px;
   height: 509px;
   margin-left: -73px;
-  margin-top: -29px;
+  margin-top: -300px;
 }
 
 .f3>img {
   height: 997px;
-  margin-top: -450px;
+  margin-top: -700px;
+
   margin-left: -160px;
 }
 
@@ -956,7 +958,7 @@ form>.btnSubmit>p {
 
 .nubes>.nubeDerecha {
   position: absolute;
-  top: 549px;
+  top: 286px;
   left: 962px;
 }
 
@@ -967,7 +969,7 @@ form>.btnSubmit>p {
 
 .nubes>.nubederecha1 {
   position: absolute;
-  top: 517px;
+  top: 243px;
   left: 794px;
 }
 
@@ -978,7 +980,7 @@ form>.btnSubmit>p {
 
 .nubes>.nubeIzquierda {
   position: absolute;
-  top: 800px;
+  top: 545px;
   left: -56px;
   clip-path: inset(0 0 0 56px);
 }
