@@ -830,6 +830,7 @@ body {
   width: 252px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .seccion8>.imagenes-inidi2 img {
