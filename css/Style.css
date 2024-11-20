@@ -88,10 +88,8 @@ body {
   height: 80%;
   background-color: rgb(255, 255, 255, 0.7);
   opacity: 0.7;
-  /* Menor visibilidad */
   transform: rotate(45deg);
   transition: all 0.5s ease;
-  /* Animación suave */
 }
 
 /* Pseudoelemento `::after` */
@@ -276,12 +274,18 @@ body {
   top: 60px;
   right: -200px;
   list-style: none;
-  padding: 0;
+  padding: 10px;
   opacity: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  z-index: 9;
+  gap: 8px;
+  width: 150px;
+  height: 120px;
+  background-color: #00797b;
+  /* Color de fondo */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  transition: box-shadow 0.3s ease;
 }
 
 .menuItems.open {
@@ -289,17 +293,32 @@ body {
   left: 110px;
   opacity: 1;
   animation: menuSlideIn 0.5s ease forwards;
-  background-color: rgba(68, 104, 63);
-  width: 100px;
 }
 
 .menuItems li {
-  font-family: Lato;
-  font-size: 20px;
-  opacity: 0;
-  transform: translateX(50px);
-  animation: fadeInItem 0.5s ease forwards;
+  display: flex;
+  height: 100%;
+  /* Coloca el ícono y el texto en la misma fila */
+  align-items: center;
+  /* Alinea verticalmente los íconos y texto */
+  gap: 10px;
+  /* Espacio entre el ícono y el texto */
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  /* Tamaño del texto */
   color: #ffffff;
+}
+
+.menuItems svg {
+  width: 24px;
+  /* Tamaño del ícono */
+  height: 24px;
+  stroke: white;
+}
+
+.menuItems.open :hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  background-color: #00D1D5
 }
 
 .menuItems li:nth-child(1) {
@@ -613,6 +632,38 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 31.14px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.seccion4 button::before,
+.seccion4 button::after {
+  content: '';
+  position: absolute;
+  left: -120px;
+  top: 0;
+  width: 150px;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.seccion4>button::after {
+  transition-delay: 0.2s;
+
+}
+
+.seccion4>button:hover::before,
+.seccion4>button:hover::after {
+  left: 100%;
+}
+
+.seccion4>button:active {
+  box-shadow: 0px 0px 0px rgba(2, 24, 126, 0.2);
+  background-color: #537d32;
 }
 
 .seccion5 {
@@ -821,8 +872,8 @@ body {
   display: flex;
   justify-content: start;
   /* Centra las imágenes horizontalmente */
-  gap: 16px;
-  margin-bottom: 31px;
+  gap: 23px;
+  margin-bottom: 31.02px;
 }
 
 .seccion8>.imagenes-inidi img {
@@ -834,18 +885,18 @@ body {
 }
 
 .seccion8>.imagenes-inidi2 img {
-  height: 324px;
-  width: 243.2px;
+  height: 322px;
+  width: 245px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .seccion8 .imagenes-inidi img:hover,
 .seccion8 .imagenes-inidi2 img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 30px grey;
+  transform: scale(1.1) translateY(-10px)rotate(-2deg);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+  filter: brightness(1.2);
 }
-
 
 .seccion9 {
   margin-top: 274px;
@@ -875,6 +926,7 @@ body {
   height: 100px;
   top: 13139px;
   margin-left: 100px;
+  z-index: 1;
 }
 
 .formulario>form {
@@ -934,6 +986,7 @@ form>.btnSubmit>p {
   border: 9px solid #FFFFFF;
   box-shadow: -4px -5px #02187E;
   border-radius: 50px 0px 0px 50px;
+  z-index: 1;
 }
 
 form>.btnSubmit>p {
@@ -948,14 +1001,12 @@ form>.btnSubmit>p {
 
 .parrafoSeccion9 {
   margin-left: 100px;
-
-
   position: absolute;
   width: 578px;
   height: 95px;
   left: 100px;
   top: 13287px;
-
+  z-index: 1;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -1032,24 +1083,33 @@ form>.btnSubmit>p {
   width: 387px;
   height: 181px;
   clip-path: inset(0 69px 0 0);
-
 }
 
 .nubes>.nubeDerecha {
   position: absolute;
   top: 286px;
   left: 962px;
+  animation: mover-nube-irregular-derecha 20s ease-in-out infinite;
+  z-index: 0;
+  /* Las nubes quedan detrás */
+  pointer-events: none;
+  /* Las nubes no interfieren con el mouse */
 }
 
 .nubes>.nubederecha1>img {
   width: 265px;
   height: 124px;
+  z-index: 0;
+  /* Las nubes quedan detrás */
 }
 
 .nubes>.nubederecha1 {
   position: absolute;
   top: 243px;
   left: 794px;
+  animation: mover-nube-diagonal 20s linear infinite;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .nubes>.nubeIzquierda>img {
@@ -1062,6 +1122,75 @@ form>.btnSubmit>p {
   top: 545px;
   left: -56px;
   clip-path: inset(0 0 0 56px);
+  animation: mover-nube 10s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes mover-nube {
+  0% {
+    left: 0%;
+    /* Comienza fuera del contenedor a la izquierda */
+  }
+
+  100% {
+    left: 900px;
+    /* Sale completamente del contenedor por la derecha */
+  }
+}
+
+@keyframes mover-nube-diagonal {
+  0% {
+    left: 900px;
+    top: 100px;
+    /* Posición inicial en la parte superior */
+  }
+
+  50% {
+    left: 640px;
+    top: 200px;
+    /* Mitad del recorrido, más abajo */
+    z-index: 0;
+  }
+
+  100% {
+    left: 0px;
+    top: 100px;
+    z-index: 0;
+    /* Finaliza regresando a la parte superior */
+  }
+}
+
+@keyframes mover-nube-irregular-derecha {
+  0% {
+    left: 900px;
+    top: 50px;
+  }
+
+  20% {
+    left: 500px;
+    top: 300px;
+  }
+
+  40% {
+    left: 800px;
+    top: 50px;
+  }
+
+  60% {
+    left: 600px;
+    top: 150px;
+  }
+
+  80% {
+    left: 300px;
+    top: 100px;
+  }
+
+  100% {
+    left: 0px;
+    top: 50px;
+  }
 }
 
 /*footer*/
