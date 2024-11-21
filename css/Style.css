@@ -1082,7 +1082,6 @@ form>.btnSubmit>p {
 .nubes>.nubeDerecha>img {
   width: 387px;
   height: 181px;
-  clip-path: inset(0 69px 0 0);
 }
 
 .nubes>.nubeDerecha {
@@ -1107,9 +1106,9 @@ form>.btnSubmit>p {
   position: absolute;
   top: 243px;
   left: 794px;
-  animation: mover-nube-diagonal 20s linear infinite;
   z-index: 0;
   pointer-events: none;
+  animation: mover-nube-diagonal 20s linear infinite;
 }
 
 .nubes>.nubeIzquierda>img {
@@ -1121,7 +1120,6 @@ form>.btnSubmit>p {
   position: absolute;
   top: 545px;
   left: -56px;
-  clip-path: inset(0 0 0 56px);
   animation: mover-nube 10s linear infinite;
   z-index: 0;
   pointer-events: none;
@@ -1134,14 +1132,14 @@ form>.btnSubmit>p {
   }
 
   100% {
-    left: 900px;
+    left: 100%;
     /* Sale completamente del contenedor por la derecha */
   }
 }
 
 @keyframes mover-nube-diagonal {
   0% {
-    left: 900px;
+    left: 200%;
     top: 100px;
     /* Posición inicial en la parte superior */
   }
@@ -1154,7 +1152,7 @@ form>.btnSubmit>p {
   }
 
   100% {
-    left: 0px;
+    left: -100%;
     top: 100px;
     z-index: 0;
     /* Finaliza regresando a la parte superior */
@@ -1163,7 +1161,7 @@ form>.btnSubmit>p {
 
 @keyframes mover-nube-irregular-derecha {
   0% {
-    left: 900px;
+    left: 100%;
     top: 50px;
   }
 
@@ -1188,7 +1186,7 @@ form>.btnSubmit>p {
   }
 
   100% {
-    left: 0px;
+    left: -100%;
     top: 50px;
   }
 }
